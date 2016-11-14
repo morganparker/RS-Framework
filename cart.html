@@ -10,24 +10,22 @@
 <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700|Montserrat:400,700' rel='stylesheet' type='text/css' rel='stylesheet' type='text/css'>
    <!-- CSS -->
  <link rel="stylesheet" href="css/normalize.css">
- <link rel="stylesheet" href="css/style.css">
  <link rel="stylesheet" href="css/fontawesome.css">
- <link rel="stylesheet" href="css/styleguide.css"> 
  <link rel="stylesheet" href="css/skeleton.css"> 
-     
+ <link rel="stylesheet" href="css/style.css"> 
  </head>
  
- <body>
- <!--Hero-->
- <header>
- <img class="twelve columns container" src="images/cart-hero-01.png" alt="Rapsberry Suede"/>
+ <body class="twelve columns container">
+  <!--Hero-->
+ <header class="twelve columns hero">
+ <img src="images/cart-hero-01.png" alt="Rapsberry Suede"/>
 
  
  <!--Header Navigation-->
 
- <a class="three columns container header-logo" href="index.html"><img src="images/logo.png" alt="Rapsberry Suede"/></a>
+ <a class="header-logo" href="index.html"><img src="images/logo.png" alt="Rapsberry Suede"/></a>
  
- <ul class="login container three columns">
+ <ul class="login">
  <li><a href="login.html">Login</a></li>
  <li><a href="cart.html">Cart</a></li>
  <i class="fa fa-cart-plus"></i>
@@ -38,31 +36,28 @@
 <main role="main">
     
 <!--Horizontal Navigation-->  
- <a class="hamburger" id="menu" href="#">&#9776;</a>
  
- <div class="twelve columns container">
- <nav class="horizontal-nav">
- <ul>
- <li><a href="women.html">Women</a></li>
- <li><a href="men.html">Men</a></li>
- <li><a href="children.html">Children</a></li>
- <li><a href="gitcards.html">Gift Cards</a></li>
- <li><a href="sale.html">Sale</a></li>
- <li><a href="about.html">Who We Are</a></li>
- </ul>
- </nav>
- </div>
-
+    <nav class="horizontal-nav twelve columns">
+    <ul>
+    <li><a href="women.html">Women</a></li>
+    <li><a href="men.html">Men</a></li>
+    <li><a href="children.html">Children</a></li>
+    <li><a href="gitcards.html">Gift Cards</a></li>
+    <li><a href="sale.html">Sale</a></li>
+    <li><a href="about.html">Who We Are</a></li>
+    </ul>
+    </nav>
+ 
 <!--Cart items-->
-<h2 class="twelve columns container">Checkout</h2>
+<h2 class="twelve columns">Checkout</h2>
     
- <div class="nine columns container cart-item">
-    <div class="one-half column container item">
-        <img src="images/index_product_two.png">
+ <section class="six columns cart-item">
+    <div class="three columns container item">
+        <img src="images/product-small-01.png">
         <p><a href="#">Remove</a> | <a href="#">Save for Later</a></p>
     </div>
     
-    <div class="one-half column container cart-desc">
+    <div class="three columns cart-desc">
         <h4>Product Name</h4>
         <h5>#ProductNumber</h5>
         <p>Color: <a class="white" shape="rect"></a></p>
@@ -70,15 +65,15 @@
         <p>$55.00</p>
         <input value="1">
     </div>
-    </div>
+    </section>
      
- <div class="nine columns container cart-item">
-    <div class="one-half column container item">
-        <img src="images/index_product_two.png">
+ <section class="six columns cart-item">
+    <div class="three columns container item">
+        <img src="images/product-small-01.png">
         <p><a href="#">Remove</a> | <a href="#">Save for Later</a></p>
     </div>
     
-    <div class="one-half column container cart-desc">
+    <div class="three columns cart-desc">
         <h4>Product Name</h4>
         <h5>#ProductNumber</h5>
         <p>Color: <a class="white" shape="rect"></a></p>
@@ -86,55 +81,59 @@
         <p>$55.00</p>
         <input value="1">
     </div>
-    </div>
+    </section>
 
-<section class="three columns container">
+<section class="four columns offset-by-two">
     
     <h4>Cart Summary</h4>
     
-    <div class="cart-price one-half column container">
+    <div class="cart-price two column" align="left">
     <p>Product Name</p>
     <p>Product Name</p>
     </div>
     
-    <div class="one-half column container price">
+    <div class="two column price" align="right">
     <p>$Price</p>
     <p>$Price</p>
     </div>
     
-    <div class="one-half column container cart-savings">
+    <div class="cart-price two column" align="left">
     <p>Savings</p>
     <p>Shipping</p>
     </div>
     
-    <div class="one-half column container price">
+    <div class="two column price" align="right">
     <p>$0.00</p>
     <p>$Amount</p>
     </div>
     
-    <p class="total one-half column container">Total</p>
-    <p class="price">$Total</p>
+    <p class="cart-price two column" align="left">Total</p>
+    <p class="one column two price" align="right">$Total</p>
 </section>
     
 
 
 <!--Checkout-->
     
-<section class="nine columns container checkout">
+<section class="twelve columns checkout">
 
 <form>
-    <h2 class="six">Promotions and Coupons</h2>
-    <input class="nine container" type="text" value="Code"><br>
+    <div class="twelve columns">
+    <h2>Promotions and Coupons</h2>
+    <input class="nine columns" type="text" value="Code"><br>
     <input type="button" value="Apply">
+    </div>
     
-    <h2 class="six">Gift Cards</h2>
-    <input class="nine columns container" type="text" value="Card Number"><br>
-    <input class="three columns container" type="text" value="PIN"><br>
+    <div class="twelve columns">
+    <h2 class="nine columns">Gift Cards</h2>
+    <input class="nine columns" type="text" value="Card Number"><br>
+    <input class="three columns" type="text" value="PIN"><br>
     <input type="button" value="Apply">
+    </div>
     
-    <h2 class="six">Shipping</h2>
+    <section class="twelve columns">
+    <h2>Shipping</h2>
     
-<section class="nine columns container">
     <div class="one-third column container button free">
         <a href="#" alt="7 to 9 business days">
             <p class="ship-option">7-9 Business Days<br> FREE with $50<br> minimun</p>
@@ -152,52 +151,63 @@
         </div>
     </section>
     
-    <h2 class="six">Payment</h2>
-    <input class="three columns container" type="text" value="Card Type">
-    <input class="six columns container" type="text" value="Name on Card">
-    <input class="nine columns container" type="text" value="Card Number">
+    <section class="twelve columns">
     
-    <div class="nine columns container date">
+    <h2>Payment</h2>
+    <input class="three columns" type="text" value="Card Type">
+    <input class="six columns" type="text" value="Name on Card">
+    <input class="nine columns" type="text" value="Card Number">
+    
+    <div class="six columns date">
     <p>Expiration Date</p>
-    <input type="text" value="MM">
-    <input type="text" value="YYYY">
+    <input class="three columns" type="text" value="MM">
+    <input class="three columns" type="text" value="YYYY">
     </div>
     
-    <div class="nine columns container cc">
+    <div class="six columns cc">
     <p>CC<a href="#">What's this?</a></p>
-    <input type="text" value="###">
+    <input class="three columns" type="text" value="###">
     </div>
     
-    <input class="nine columns container" type="text" value="Email Address">
+    <input class="nine columns" type="text" value="Email Address">
     
-    <div class="three columns container button payment" align="center">
+    <div class="three columns button payment" align="center">
         <a href="#" alt="Pay with Paypal">
             <p class="payment-option">Pay with Paypal<br></p>
         </a>
         </div>
     
-     <div class="three columns container button payment" align="center">
+     <div class="three columns button payment" align="center">
         <a href="#" alt="Pay with Amazon">
             <p class="payment-option">Pay with Amazon<br></p>
         </a>
         </div>
+        </section>
     
-    <h2 class="six">Billing Address</h2>
-    <input class="nine columns container" type="text" value="Name">
-    <input class="nine columns container" type="text" value="Address">
-    <input class="nine columns container" type="text" value="Address Line 2">
-    <input class="five columns container" type="text" value="City">
-    <input class="two columns container" type="text" value="State">
-    <input class="two columns container" type="text" value="Zip Code">
+    <section class="twelve columns">
     
-    <h2 class="six">Shipping Address</h2>
-    <input class="three columns checkbox" type="checkbox" value="same">Same as Billing Address<br>
-     <input class="nine columns container" type="text" value="Name">
-    <input class="nine columns container" type="text" value="Address">
-    <input class="nine columns container" type="text" value="Address Line 2">
-    <input class="five columns container" type="text" value="City">
-    <input class="two columns container" type="text" value="State">
-    <input class="two columns container" type="text" value="Zip Code">
+    <h2>Billing Address</h2>
+    <input class="nine columns" type="text" value="Name">
+    <input class="nine columns" type="text" value="Address">
+    <input class="nine columns" type="text" value="Address Line 2">
+    <input class="five columns" type="text" value="City">
+    <input class="two columns" type="text" value="State">
+    <input class="two columns" type="text" value="Zip Code">
+    
+    </section>
+    
+     <section class="twelve columns">
+    
+    <h2>Shipping Address</h2>
+    <input class="checkbox" type="checkbox" value="same">Same as Billing Address<br>
+    <input class="nine columns" type="text" value="Name">
+    <input class="nine columns" type="text" value="Address">
+    <input class="nine columns" type="text" value="Address Line 2">
+    <input class="five columns" type="text" value="City">
+    <input class="two columns" type="text" value="State">
+    <input class="two columns" type="text" value="Zip Code">
+    
+    </section>
     
 </form>
     
@@ -208,7 +218,7 @@
     
 <!--Footer-->
 <footer class="twelve columns container">
-<nav class="three columns container" align="left">
+<nav class="three columns offset-by-three" align="left">
    <ul>
            <li><a href="">About Us</a></li>
            <li><a href="">Cleaning Care/Instructions</a></li> 
