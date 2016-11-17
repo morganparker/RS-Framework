@@ -1,3 +1,27 @@
+.hero{
+    background-image: url(images/header.png);
+    height:261px;
+    position:relative;
+}
+
+.hero-2{
+    background-image: url(images/product_description_header.png);
+    height:250px;
+    position:relative;
+}
+
+.hero-3{
+    background-image:url(images/cart-hero-01.png);
+    height:250px;
+    position:relative;
+}
+
+.hero-4{
+    background-image:url(images/women_productpage.png);
+    height:261px;
+    position:relative;
+}
+
 .horizontal-nav{
     background-color:#EA2C68;
     height:40px
@@ -12,6 +36,23 @@
     text-decoration:none;
     margin:0 auto;
     padding: 20px;
+}
+
+i{
+    color:white;
+}
+
+li{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+}
+
+.login li a{
+    display:inline;
+    color:white;
 }
 
 h1{
@@ -53,10 +94,6 @@ footer{
     background-color:#EA2C68;
 }
 
-.hero{
-    position:relative;
-}
-
 .header-logo{
     position:absolute;
     left:2%;
@@ -70,7 +107,8 @@ footer{
 }
 
 .sale{
-    background-image: url("index_sale.png");
+    background-image:url(images/index_sale.png);
+    background-repeat: no-repeat;
     height:20%;
 }
 
@@ -86,4 +124,3 @@ padding-left: 8%;
 font-size:.9em;
 font-weight:700;
 }
-
