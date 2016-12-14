@@ -13,22 +13,84 @@
     <link rel="stylesheet" href="css/fontawesome.css">
     <link rel="stylesheet" href="css/skeleton.css"> 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
      
 <style>
     /* Prevents slides from flashing */
     #slides {
-      display:none;
+      display: none
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:5%;
+    }
+
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    #slides .slidesjs-next {
+      margin-left: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
     }
   </style>
 
-  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script src="script/jquery.slides.min.js"></script>
 
   <script>
     $(function(){
       $("#slides").slidesjs({
         width: 400,
-        height: 400
+        height: 400,
+        navigation: false
       });
     });
       
@@ -68,25 +130,28 @@
     </nav>
     
 <!--Slideshow-->
-
-
-    <div class ="six columns" id="slides">
     
-        <img src="images/index_product_two.png">
-    
-        <i class="one column container fa fa-caret-left slidesjs-previous slidesjs-navigation" aria-hidden="true"></i>
-    
-        <i class="one column container fa fa-caret-right slidesjs-next slidesjs-navigation" aria-hidden="true"></i>
-
-        <img src="images/index_product_two.png">
-        <img src="images/index_product_two.png">
-        <img src="images/index_product_two.png">
-        <img src="images/index_product_two.png">
+<div class="five columns offset-by-oner">
+    <div id="slides">
+      <img src="images/index_product_two.png" alt=""/>
+      <img src="images/index_product_two.png" alt=""/>
+      <img src="images/index_product_two.png" alt=""/>
+      <img src="images/index_product_two.png" alt=""/>
+      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large blue-icon"></i></a>
+      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large blue-icon"></i></a>
         
-    </div>
+      <ul class="slidesjs-pagination">
+          <li class="slidesjs-pagination-item"><a href="#" data-slidesjs-item="0" class="active">1</a></li>
+          <li class="slidesjs-pagination-item"><a href="#" data-slidesjs-item="1">2</a></li>
+          <li class="slidesjs-pagination-item"><a href="#" data-slidesjs-item="2">3</a></li>
+          <li class="slidesjs-pagination-item"><a href="#" data-slidesjs-item="3">4</a></li>
+        </ul>
+        
+    </div>    
+      </div>
 
 <!--Product Description-->
-    <section class="six columns">
+    <section class="five columns offset-by-one">
 
         <h2 align="left">Name of Product</h2>
         
@@ -185,7 +250,7 @@
 
 </main>
 
- <!--Footer-->
+<!--Footer-->
     <footer class="twelve columns">
         <nav class="four columns offset-by-two" align="left">
             <ul>
@@ -196,7 +261,7 @@
              </ul>
         </nav>
         
-        <nav class="four columns" align="left">
+        <nav class="four columns offset-by-one" align="left">
             <ul>
                <li><a href="">FAQ</a></li> 
                <li><a href="">Return Policy</a></li> 
@@ -204,10 +269,6 @@
                <li><a href="">Shipping Information</a></li> 
              </ul>
         </nav>
-
-        <div class="three columns" align="right">
-            <a href="index.html" class="site-logo"><img src="images/logo-white.png" alt="Rapsberry Suede"/></a>
-        </div>
 
         <div class="twelve columns" align="center">
             <p class="copyright-block">&copy; 2015. <strong>Raspberry Suede</strong> | raspberrysuede.com</p>

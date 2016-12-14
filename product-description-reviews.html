@@ -13,27 +13,88 @@
     <link rel="stylesheet" href="css/fontawesome.css">
     <link rel="stylesheet" href="css/skeleton.css"> 
     <link rel="stylesheet" href="css/style.css">
-        
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
      
-     <style>
+<style>
     /* Prevents slides from flashing */
-        #slides {
-          display:none;
-        }
-    </style>
+    #slides {
+      display: none
+    }
 
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="script/jquery.slides.min.js"></script>
+    #slides .slidesjs-navigation {
+      margin-top:5%;
+    }
 
-    <script>
-        $(function(){
-          $("#slides").slidesjs({
-            width: 400,
-            height: 400
-          });
-        });
+    #slides .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    #slides .slidesjs-next {
+      margin-left: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+  </style>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="script/jquery.slides.min.js"></script>
+
+  <script>
+    $(function(){
+      $("#slides").slidesjs({
+        width: 400,
+        height: 400,
+        navigation: false
+      });
+    });
       
-    </script>
+  </script>
  
  </head>
  
@@ -70,27 +131,33 @@
     </nav>
     
 <!--Slideshow-->
-    <div class ="six columns" id="slides">
     
-        <img src="images/index_product_two.png">
-    
-        <i class="one column container fa fa-caret-left slidesjs-previous slidesjs-navigation" aria-hidden="true"></i>
-
-        <i class="one column container fa fa-caret-right slidesjs-next slidesjs-navigation" aria-hidden="true"></i>
-
-        <img src="images/index_product_two.png">
-        <img src="images/index_product_two.png">
-        <img src="images/index_product_two.png">
-        <img src="images/index_product_two.png">
-    
-    </div>
+<div class="five columns offset-by-oner">
+    <div id="slides">
+      <img src="images/index_product_two.png" alt=""/>
+      <img src="images/index_product_two.png" alt=""/>
+      <img src="images/index_product_two.png" alt=""/>
+      <img src="images/index_product_two.png" alt=""/>
+      <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large blue-icon"></i></a>
+      <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large blue-icon"></i></a>
+        
+      <ul class="slidesjs-pagination">
+          <li class="slidesjs-pagination-item"><a href="#" data-slidesjs-item="0" class="active">1</a></li>
+          <li class="slidesjs-pagination-item"><a href="#" data-slidesjs-item="1">2</a></li>
+          <li class="slidesjs-pagination-item"><a href="#" data-slidesjs-item="2">3</a></li>
+          <li class="slidesjs-pagination-item"><a href="#" data-slidesjs-item="3">4</a></li>
+        </ul>
+        
+    </div>    
+      </div>
 
 <!--Product Description-->
-    <section class="six columns">
+    <section class="five columns offset-by-one">
 
         <h2 align="left">Name of Product</h2>
+        
         <p class="price" align="left">$55.00</p>
-    
+
         <p>Read 2 Reviews | Write a Review</p>
 
         <h3 align="left">Product Description</h3>
@@ -107,7 +174,6 @@
         </ul>
     
         <div class="selects">
-            
             <a class="white" shape="rect"></a>
             <a class="black" shape="rect"></a>
             <a class="tan" shape="rect"></a>
@@ -184,26 +250,23 @@
     </section>
 
 <!--Reviews-->
-    <div class="six columns">
+    <div class="twelve columns">
 
         <h2 align="left">Write a Review</h2>
         
     <!--Form-->
         <form>
-            <input type="text" id="rating"  value="Rating" required />
-            <strong><abbr title="required">*</abbr></strong>
+            <input class="one-third column" type="text" id="rating"  value="Rating*" required />
             
-            <input type="text" id="title" value="Title" required />
-            <strong><abbr title="required">*</abbr></strong>
+            <input class="two-thirds column u-cf"type="text" id="title" value="Title*" required />
             
-            <input type="text" id="name" value="Name"/>
+            <input class="two-thirds column" type="text" id="name" value="Name"/>
             
-            <input type="text" id="write" value="(160 Characters Max.)" required />
-            <strong><abbr title="required">*</abbr></strong>
+            <input class="two-thirds column" type="text" id="write" value="(160 Characters Max.)*" required />
         
         </form>
     
-        <div class="button" align="center">
+        <div class="button u-cf" align="center">
             <a href="#" alt="Submit">Submit</a>
         </div>
     </div>   
@@ -224,7 +287,28 @@
     
         <h3>Reviews</h3>
     
-       <div align="left">
+        <section class="three columns table">
+        <table>
+            <th>Pro</th>
+            <th>Con</th>
+            <tr>
+                <td>Confortable</td>
+                <td>Wide</td>
+            </tr>
+            <tr>
+                <td>Warm</td>
+            </tr>
+            <tr>
+                <td>Inexpensive</td>
+            </tr>
+            <tr>
+                <td>High Qaulity</td>
+            </tr>
+        </table>
+    
+        </section>
+        
+       <div class="u-cf" align="left">
             <h4>Most comfortable hat EVER!</h4>
             <h5>by Julia Smith | November 17, 2015</h5>
             <p>I love this hat so much!  The color is great for fall and winter, and the material is very sturdy.  It is hard to find a good quality hat for the chillier months, but this hat hit the nail right on the head!  The wine colored band that goes around the hat is a nice addition and makes it feel very secure on your head.  The hat is a tiny bit wide, which is still comfortable, but if you have a small head, this might not be the hat for you.  I would definitely recommend this!</p>
@@ -245,34 +329,10 @@
             <p>I love this hat so much!  The color is great for fall and winter, and the material is very sturdy.  It is hard to find a good quality hat for the chillier months, but this hat hit the nail right on the head!  The wine colored band that goes around the hat is a nice addition and makes it feel very secure on your head.  The hat is a tiny bit wide, which is still comfortable, but if you have a small head, this might not be the hat for you.  I would definitely recommend this!</p>
         </div>
     </section>
-    
-    <section class="three columns table">
-        <table>
-            <th>Pro</th>
-            <th>Con</th>
-            <tr>
-                <td>Confortable</td>
-                <td>Wide</td>
-            </tr>
-            <tr>
-                <td>Warm</td>
-            </tr>
-            <tr>
-                <td>Inexpensive</td>
-            </tr>
-            <tr>
-                <td>High Qaulity</td>
-            </tr>
-        </table>
-    
-    </section>
-
-
-
 
 </main>
 
-    <!--Footer-->
+   <!--Footer-->
     <footer class="twelve columns">
         <nav class="four columns offset-by-two" align="left">
             <ul>
@@ -283,7 +343,7 @@
              </ul>
         </nav>
         
-        <nav class="four columns" align="left">
+        <nav class="four columns offset-by-one" align="left">
             <ul>
                <li><a href="">FAQ</a></li> 
                <li><a href="">Return Policy</a></li> 
@@ -291,10 +351,6 @@
                <li><a href="">Shipping Information</a></li> 
              </ul>
         </nav>
-
-        <div class="three columns" align="right">
-            <a href="index.html" class="site-logo"><img src="images/logo-white.png" alt="Rapsberry Suede"/></a>
-        </div>
 
         <div class="twelve columns" align="center">
             <p class="copyright-block">&copy; 2015. <strong>Raspberry Suede</strong> | raspberrysuede.com</p>

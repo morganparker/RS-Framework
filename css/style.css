@@ -1,3 +1,70 @@
+img{
+    width:100%;
+}
+
+.bestseller{
+    margin-top:10%;
+    margin-bottom: 10%;
+}
+
+.bestseller img{
+    width:75%;
+    margin-right:12.5%;
+    margin-left:12.5%;
+}
+
+.product-best img{
+    width:40%;
+    margin-bottom:-10%;
+}
+
+.product-best .button{
+    width:40%;
+    margin-bottom:10%;
+}
+
+.bestseller p{
+    position:absolute;
+}
+
+.bestseller h3{
+    text-align: center;
+}
+
+.bestseller h4{
+    text-align: center;
+}
+
+.bestseller h5{
+    text-align: center;
+}
+
+.bestseller div{
+    text-align: center;
+}
+
+#about{
+    margin-top:15%;
+    margin-bottom:6.2%;
+}
+
+#connect li{
+    display:inline;
+}
+
+#connect i{
+    color:#EA2C68;
+    font-size: 2.2em;
+    margin-right:5%;
+}
+
+.header-logo{
+    width:25%;
+    position:absolute;
+    left:2%;
+    top:65%;
+}
+
 .hero{
     background-image: url(images/header.png);
     height:261px;
@@ -24,7 +91,7 @@
 
 .horizontal-nav{
     background-color:#EA2C68;
-    height:40px
+    height:40px;
 }
 
 .horizontal-nav ul li{
@@ -48,56 +115,53 @@ li{
 
 li a{
     text-decoration: none;
-}
-
-.login li a{
-    display:inline;
     color:white;
 }
 
+li a:hover{
+    color:#1D2456;
+}
+
+.login li{
+    display:inline;
+    color:white;
+    font-weight: 700;
+    margin-right:15%;
+}
+
 h1{
-   font-size: 1.6em;
+   font-size: 1em;
     font-family:Montserrat, sans-serif; 
 }
 
 h2{
-   font-size: 1.4em;
+   font-size: .9em;
     font-family:Montserrat, sans-serif; 
 }
 
 h3{
-    font-size: 1.2em;
-    font-family:Montserrat, sans-serif;
-}
-
-h4{
-    font-size: 1em;
-    font-family:Montserrat, sans-serif;
-}
-
-h5{
     font-size: .8em;
     font-family:Montserrat, sans-serif;
 }
 
-h6{
+h4{
+    font-size: .7em;
+    font-family:Montserrat, sans-serif;
+}
+
+h5{
     font-size: .6em;
+    font-family:Montserrat, sans-serif;
+}
+
+h6{
+    font-size: .5em;
     font-family:Montserrat, sans-serif;
 }
 
 p{
    font-size: .8em;
     font-family:Montserrat, sans-serif; 
-}
-
-footer{
-    background-color:#EA2C68;
-}
-
-.header-logo{
-    position:absolute;
-    left:2%;
-    top:50%;
 }
 
 .login{
@@ -118,9 +182,122 @@ footer{
     background-color: rgba(255, 255, 255, .7)
 }
 
+.feature{
+    margin-bottom:2%;
+}
+
+.box{
+    border-bottom: 2px solid #EA2C68;
+}
+
+.cart-summary{
+    border:5px solid #EA2C68;
+}
+
+.cart-summary h4{
+    margin-top: 20px;
+    margin-left:10px;
+    font-weight:700;
+}
+
 .ad p{
 padding-right: 8%;
 padding-left: 8%;
 font-size:.9em;
 font-weight:700;
+}
+
+.align-left{
+    margin-left: 0;
+}
+
+.promo{
+    margin-bottom:10%;
+}
+
+.gift-card{
+    margin-bottom:10%;
+}
+
+.shipping{
+    margin-bottom:10%;
+}
+
+.payment{
+    margin-bottom:10%;
+}
+
+.billing{
+    margin-bottom:10%;
+}
+
+.button{
+    background-color:#EA2C68;
+    width:100%;
+}
+
+div.apply{
+    background-color:#1D2456; 
+}
+
+.apply p{
+    font-size:1.2em;
+    margin-bottom:0;
+}
+
+.button a{
+    width: 90%;
+    margin: 0 auto;
+    color:white;
+    text-decoration:none;
+    font-size: .7em;
+    text-align: center;
+}
+
+.button.free{
+    padding-top:1%;
+    padding-bottom:1%;
+}
+
+.button.free p{
+    line-height: 1.8em;
+}
+
+.side-nav{
+    color:#1D2456;
+}
+
+.full-row{
+    
+}
+
+footer{
+    margin-top:20%;
+    background-color:#EA2C68;
+}
+
+footer nav{
+    margin-top:5%;
+}
+
+.copyright-block{
+    color:white;
+    margin-top:5%;
+}
+
+@media (max-width: 900px) {
+    .button a{
+        font-size:.6em;
+    }
+}
+
+@media (max-width: 550px) {
+    img{
+        width:30%;
+    }
+    
+    .button{
+        width:30%;
+    }
+    
 }

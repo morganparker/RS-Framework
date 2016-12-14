@@ -49,14 +49,31 @@
 <!--Cart items-->
     <h2 class="twelve columns">Checkout</h2>
     
-    <section class="six columns cart-item">
+    <section class="four columns cart-item">
         
-        <div class="three columns container item">
+        <div class="box">
+            <div class="one-third column item">
+                <img src="images/product-small-01.png">
+                <p><a href="#">Remove</a> | <a href="#">Save for Later</a></p>
+            </div>
+    
+            <div class="one-third column offset-by-one-third cart-desc">
+                <h4>Product Name</h4>
+                <h5>#ProductNumber</h5>
+                <p>Color: <a class="white" shape="rect"></a></p>
+                <p>Size: One Size</p>
+                <p>$55.00</p>
+            <input value="1">
+            </div>
+        </div>
+        
+        <div class="box">
+        <div class="one-third column item">
             <img src="images/product-small-01.png">
             <p><a href="#">Remove</a> | <a href="#">Save for Later</a></p>
         </div>
     
-        <div class="three columns cart-desc">
+        <div class="one-third column offset-by-one-third cart-desc">
             <h4>Product Name</h4>
             <h5>#ProductNumber</h5>
             <p>Color: <a class="white" shape="rect"></a></p>
@@ -64,53 +81,36 @@
             <p>$55.00</p>
             <input value="1">
         </div>
-        
-    </section>
-     
-     <section class="six columns cart-item">
-         
-        <div class="three columns container item">
-            <img src="images/product-small-01.png">
-            <p><a href="#">Remove</a> | <a href="#">Save for Later</a></p>
         </div>
-
-        <div class="three columns cart-desc">
-            <h4>Product Name</h4>
-            <h5>#ProductNumber</h5>
-            <p>Color: <a class="white" shape="rect"></a></p>
-            <p>Size: One Size</p>
-            <p>$55.00</p>
-            <input value="1">
-        </div>
-         
+       
         </section>
 
-        <section class="four columns offset-by-two">
+        <section class="six columns offset-by-two cart-summary">
 
             <h4>Cart Summary</h4>
 
-            <div class="cart-price two column" align="left">
+            <div class="cart-price one-third column" align="left">
                 <p>Product Name</p>
                 <p>Product Name</p>
             </div>
 
-            <div class="two column price" align="right">
+            <div class="one-third offset-by-one-third column price" align="left">
                 <p>$Price</p>
                 <p>$Price</p>
             </div>
 
-            <div class="cart-price two column" align="left">
+            <div class="cart-price one-third column" align="left">
                 <p>Savings</p>
                 <p>Shipping</p>
             </div>
 
-            <div class="two column price" align="right">
+            <div class="one-third offset-by-one-third column price" align="left">
                 <p>$0.00</p>
                 <p>$Amount</p>
             </div>
 
-            <p class="cart-price two column" align="left">Total</p>
-            <p class="one column two price" align="right">$Total</p>
+            <p class="cart-price one-third column" align="left">Total</p>
+            <p class="one-third offset-by-one-third column price" align="left">$Total</p>
             
         </section>
     
@@ -121,35 +121,43 @@
         <section class="twelve columns checkout">
 
             <form>
-                <div class="twelve columns">
-                    <h2>Promotions and Coupons</h2>
+                 <div class="twelve columns promo">    
+                    <h2 class="twelve columns">Promotions and Coupons</h2>
                     <input class="nine columns" type="text" value="Code"><br>
-                    <input type="button" value="Apply">
+                    <div class="four columns button apply u-cf">
+                        <a href="#" alt="apply">
+                            <p>Apply</p>
+                        </a>
+                    </div>
                 </div>
-
-                <div class="twelve columns">
-                    <h2 class="nine columns">Gift Cards</h2>
+                
+                <div class="twelve columns gift-card">
+                    <h2>Gift Cards</h2>
                     <input class="nine columns" type="text" value="Card Number"><br>
-                    <input class="three columns" type="text" value="PIN"><br>
-                    <input type="button" value="Apply">
+                    <input class="four columns" type="text" value="PIN"><br>
+                    <div class="four columns button apply u-cf">
+                        <a href="#" alt="apply">
+                            <p>Apply</p>
+                        </a>
+                    </div>
                 </div>
 
-                <section class="twelve columns">
+                <section class="twelve columns shipping">
                     <h2>Shipping</h2>
 
                     <div class="one-third column container button free">
                         <a href="#" alt="7 to 9 business days">
-                            <p class="ship-option">7-9 Business Days<br> FREE with $50<br> minimun</p>
+                            <p class="ship-option">7-9 Business Days <br>FREE with $50 minimun</p>
                         </a>
                     </div>
                     
-                    <div class="one-third column container button shipping">
+                    <div class="one-third column container button">
                         <a href="#" alt="3 to 5 business days">
                             <p class="ship-option">3-5 Business Days<br> $7.00<br></p>
                         </a>
                     </div>
                     
-                    <div class="one-third column container button shipping">
+                    <div class="one-third column container button">
                         <a href="#" alt="1 day shipping">
                             <p class="ship-option">1 Day Shipping<br> $15.00<br></p>
                         </a>
@@ -157,7 +165,7 @@
                     
                 </section>
     
-        <section class="twelve columns">
+        <section class="twelve columns payment">
     
             <h2>Payment</h2>
             <input class="three columns" type="text" value="Card Type">
@@ -177,13 +185,13 @@
 
             <input class="nine columns" type="text" value="Email Address">
 
-            <div class="three columns button payment" align="center">
+            <div class="four columns button payment" align="center">
                 <a href="#" alt="Pay with Paypal">
                     <p class="payment-option">Pay with Paypal<br></p>
                 </a>
             </div>
 
-             <div class="three columns button payment" align="center">
+             <div class="four columns button payment" align="center">
                 <a href="#" alt="Pay with Amazon">
                     <p class="payment-option">Pay with Amazon<br></p>
                 </a>
@@ -191,7 +199,7 @@
             
         </section>
     
-        <section class="twelve columns">
+        <section class="twelve columns billing">
 
             <h2>Billing Address</h2>
             
@@ -204,7 +212,7 @@
 
         </section>
 
-        <section class="twelve columns">
+        <section class="twelve columns shipping-address">
 
             <h2>Shipping Address</h2>
             
@@ -224,7 +232,7 @@
 
 </main>
     
- <!--Footer-->
+<!--Footer-->
     <footer class="twelve columns">
         <nav class="four columns offset-by-two" align="left">
             <ul>
@@ -235,7 +243,7 @@
              </ul>
         </nav>
         
-        <nav class="four columns" align="left">
+        <nav class="four columns offset-by-one" align="left">
             <ul>
                <li><a href="">FAQ</a></li> 
                <li><a href="">Return Policy</a></li> 
@@ -243,10 +251,6 @@
                <li><a href="">Shipping Information</a></li> 
              </ul>
         </nav>
-
-        <div class="three columns" align="right">
-            <a href="index.html" class="site-logo"><img src="images/logo-white.png" alt="Rapsberry Suede"/></a>
-        </div>
 
         <div class="twelve columns" align="center">
             <p class="copyright-block">&copy; 2015. <strong>Raspberry Suede</strong> | raspberrysuede.com</p>
