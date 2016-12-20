@@ -18,6 +18,10 @@ img{
     margin-bottom:-10%;
 }
 
+.big.button{
+    width:60%;
+}
+
 .product-best .button{
     width:40%;
     margin-bottom:10%;
@@ -55,14 +59,14 @@ img{
 #connect i{
     color:#EA2C68;
     font-size: 2.2em;
-    margin-right:5%;
+    margin-left:5%;
 }
 
 .header-logo{
     width:25%;
     position:absolute;
     left:2%;
-    top:65%;
+    top:60%;
 }
 
 .hero{
@@ -89,9 +93,14 @@ img{
     position:relative;
 }
 
+.nav-center{
+    margin:0 auto;
+}
+
 .horizontal-nav{
     background-color:#EA2C68;
-    height:40px;
+    height:30px;
+    padding-top:.3%;
 }
 
 .horizontal-nav ul li{
@@ -101,8 +110,14 @@ img{
 .horizontal-nav ul li a{
     color:white;
     text-decoration:none;
-    margin:0 auto;
-    padding: 20px;
+    padding:4%;
+    font-size:1em;
+    font-family:Montserrat, sans-serif; 
+    font-weight: 700;
+}
+
+.horizontal-nav ul li a:hover{
+    color:#1D2456;
 }
 
 i{
@@ -186,8 +201,17 @@ p{
     margin-bottom:2%;
 }
 
-.box{
+hr{
     border-bottom: 2px solid #EA2C68;
+}
+
+h3.title{
+    margin-top: -100%;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 92%;
+    font-family:Montserrat, sans-serif; 
+    font-weight:700;
 }
 
 .cart-summary{
@@ -219,10 +243,6 @@ font-weight:700;
     margin-bottom:10%;
 }
 
-.shipping{
-    margin-bottom:10%;
-}
-
 .payment{
     margin-bottom:10%;
 }
@@ -246,11 +266,11 @@ div.apply{
 }
 
 .button a{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     color:white;
     text-decoration:none;
-    font-size: .7em;
+    font-size: .8em;
     text-align: center;
 }
 
@@ -260,7 +280,7 @@ div.apply{
 }
 
 .button.free p{
-    line-height: 1.8em;
+    line-height: 1.2em;
 }
 
 .side-nav{
@@ -285,9 +305,66 @@ footer nav{
     margin-top:5%;
 }
 
+@media (max-width: 950px) {
+    .horizontal-nav ul li a{
+        color:white;
+        text-decoration:none;
+        margin:0 auto;
+        padding: 4%;
+        font-family:Montserrat, sans-serif; 
+        font-weight: 700;
+    }
+
+
+}
+
 @media (max-width: 900px) {
     .button a{
+        font-size:.9em;
+    }
+    .payment a{
+        font-size:.9em;
+    }
+    .free.button a{
+        font-size:.9em;
+    }
+    
+    .shipping.button{
+        font-size:.9em;
+    }
+    
+    .free.button{
+        width:55%;
+    }
+    
+    .shipping.button{
+        width:55%;
+    }
+    .header-logo{
+    width:30%;
+    top:65%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-logo{
+    width:100%;
+    top:70%;
+    }
+    .button a{
+        font-size:.7em;
+    }
+    .ad p{
+        font-size:.8em;
+    }
+}
+
+@media (max-width: 667px) {
+    .button a{
         font-size:.6em;
+    }
+    .ad p{
+        font-size:.7em;
     }
 }
 
@@ -295,9 +372,31 @@ footer nav{
     img{
         width:30%;
     }
+    .header-logo{
+        width:100%;
+    }
     
+    footer nav ul li{
+        padding-left:10%;
+    }
     .button{
-        width:30%;
+        width:40%;
+    }
+    .button a{
+        font-size:.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-logo{
+        top:75%;
+    }
+     .free.button{
+        width:100%;
+    }
+    
+    .shipping.button{
+        width:100%;
     }
     
 }
