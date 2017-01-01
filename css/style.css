@@ -63,7 +63,7 @@ img{
 }
 
 .header-logo{
-    width:25%;
+    width:100%;
     position:absolute;
     left:2%;
     top:60%;
@@ -201,6 +201,35 @@ p{
     margin-bottom:2%;
 }
 
+.left-nav{
+    color:#EA2C68;
+    text-decoration:none;
+    font-size:1em;
+    font-family:Montserrat, sans-serif; 
+    font-weight: 700;
+    display:block;
+}
+
+.left-nav-margin{
+    margin-top:5%;
+}
+
+.product h2{
+    margin-top:-70%;
+    padding-bottom:47%;
+    font-family:Montserrat, sans-serif; 
+    font-weight:700;
+    color:#fff;
+}
+
+.product img{
+    width:75%;
+}
+
+.product .button{
+    width:80%;
+}
+
 hr{
     border-bottom: 2px solid #EA2C68;
 }
@@ -210,6 +239,15 @@ h3.title{
     text-align: center;
     color: #fff;
     padding-bottom: 92%;
+    font-family:Montserrat, sans-serif; 
+    font-weight:700;
+}
+
+h3.title-2{
+    margin-top: -55%;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 50%;
     font-family:Montserrat, sans-serif; 
     font-weight:700;
 }
@@ -274,6 +312,10 @@ div.apply{
     text-align: center;
 }
 
+.button a:hover{
+    color:#1D2456;
+}
+
 .button.free{
     padding-top:1%;
     padding-bottom:1%;
@@ -283,12 +325,25 @@ div.apply{
     line-height: 1.2em;
 }
 
+.button.submit{
+    width:20%;
+    margin-left:1%;
+}
+
 .side-nav{
     color:#1D2456;
 }
 
 .full-row{
     
+}
+
+.product-info{
+    margin-top: 5%;
+}
+
+.product-info .button{
+    width:50%;
 }
 
 footer{
@@ -307,15 +362,27 @@ footer nav{
 
 @media (max-width: 950px) {
     .horizontal-nav ul li a{
+        padding:0%;
+        display: block;
+        text-align:left;
         color:white;
         text-decoration:none;
-        margin:0 auto;
-        padding: 4%;
         font-family:Montserrat, sans-serif; 
         font-weight: 700;
+        background-color:#EA2C68;
+    }
+    .horizontal-nav{
+        padding-left:4%;
+        height:4%;
     }
 
 
+}
+
+@media (max-width: 917px) {
+    .product h2{
+        margin-top:-72%;
+    }
 }
 
 @media (max-width: 900px) {
@@ -341,14 +408,17 @@ footer nav{
         width:55%;
     }
     .header-logo{
-    width:30%;
     top:65%;
+    }
+}
+@media(max-width: 846px) {
+    .product h2{
+        margin-top: -74%;
     }
 }
 
 @media (max-width: 768px) {
     .header-logo{
-    width:100%;
     top:70%;
     }
     .button a{
@@ -366,21 +436,26 @@ footer nav{
     .ad p{
         font-size:.7em;
     }
+    .header-logo{
+        width:140%;
+    }
 }
 
 @media (max-width: 550px) {
     img{
         width:30%;
     }
-    .header-logo{
-        width:100%;
-    }
-    
+    .product img{
+        width:30%;
+    }   
     footer nav ul li{
         padding-left:10%;
     }
     .button{
         width:40%;
+    }
+    .product-info .button{
+        width:20%;
     }
     .button a{
         font-size:.8em;
@@ -391,6 +466,9 @@ footer nav{
     .header-logo{
         top:75%;
     }
+    .product img{
+        width:30%;
+    }
      .free.button{
         width:100%;
     }
@@ -399,4 +477,8 @@ footer nav{
         width:100%;
     }
     
+}
+
+@media (max-width: 270px) {
+
 }
