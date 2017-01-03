@@ -325,6 +325,10 @@ div.apply{
     line-height: 1.2em;
 }
 
+.button.shipping p{
+    line-height: 1.2em;
+}
+
 .button.submit{
     width:20%;
     margin-left:1%;
